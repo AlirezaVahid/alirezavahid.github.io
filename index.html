@@ -12,11 +12,44 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+			/* Mobile scroll and overflow fix for long header content */
+			@media screen and (max-width: 736px) {
+				html, body {
+					overflow-y: auto !important;
+					height: auto !important;
+				}
+
+				#wrapper {
+					justify-content: flex-start !important;
+					padding: 2rem 1rem 3rem 1rem !important;
+					min-height: 100vh !important;
+					height: auto !important;
+				}
+
+				#header {
+					margin-top: 1rem !important;
+				}
+
+				#header .content {
+					max-height: none !important;
+				}
+
+				#header .content .inner {
+					max-height: none !important;
+					overflow: visible !important;
+					padding: 2rem 1.25rem 1rem 1.25rem !important;
+				}
+
+				#header .content img {
+					max-width: 160px !important;
+					height: auto !important;
+				}
+			}
+		</style>
 	</head>
 	<body>
-
-
-
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -28,7 +61,6 @@
 </div>
 <div class="content">
 <div class="inner">
-
 
 <h1>Alireza Vahid</h1>
 <!-- <img src="images/Website-Index-circle.jpg" alt="alt text" width="200px" /> -->
@@ -62,57 +94,22 @@
 </nav>
 </header>
 
-
-
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-
-
-
 <!-- Main -->
 <div id="main">
 
-
-<!-- -->
-<!-- -->
 <!-- About -->
-
-
 <article id="about">
 <h2 class="major">About</h2>
 <img src="images/Website-Intro.jpg" alt="alt text" width="250px" />
 
 <p>I received my B.Sc. in Electrical Engineering from Sharif University of Technology, and my M.Sc. and Ph.D. from the School of Electrical and Computer Engineering at Cornell University working with <a href="http://www-bcf.usc.edu/~avestime/Home.html">Professor Salman Avestimehr</a>. I received the 2015 Best PhD Thesis Award and the 2011 Best PhD Teaching Award from Cornell. After receiving my PhD, I worked as a postdoctoral research fellow at Duke University with <a href="http://ece.duke.edu/faculty/robert-calderbank">Professor Robert Calderbank</a>. I joined the University of Colorado in August 2017. My research interests include network information theory, wireless communications, coding theory, and data storage.</p>
 
-<!-- <a href="CV_Alireza_Vahid.pdf">Curriculum Vitae</a><br> -->
-	
-<!-- <a href="https://scholar.google.com/citations?user=F8yNrU8AAAAJ&hl=en&oi=ao">Google Scholar</a> -->
-
-
-	
-	
-
 </article>
 
-<!-- -->
-<!-- -->
-<!-- Work -->
-
-
+<!-- Research -->
 <article id="research">
 <h2 class="major">Research</h2>
-<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
 <p>In my lab, we work on a range of problems in data acquisition, transmission, and processing. My research is inspired by the challenges of wireless networks (WiFi, 6G and beyond), satellite communications, integrated sensing and communications, spectrum coexistence, and data storage. Below is a list of my active projects.</p>
-
-
-<!-- <p>
-</p>
-<table class="imgtable"><tr><td>
-<img src="images/PacketNetworks.jpg" alt="alt text" width="700px" />&nbsp;</td>
-</td></tr></table> -->
-
 
 <p><b>Wireless Networking & Security</b>:</p>
 <ul>
@@ -128,39 +125,23 @@
 <ul>
 <li>Non-stationary channels, caching, synergistic gains for coexistence, CSI learning, ultra low-rate feedback</li>
 </ul>
-	
-<!-- <p>
-</p>
-<table class="imgtable"><tr><td>
-<img src="images/Racetrack3D.jpg" alt="alt text" width="700px" />&nbsp;</td>
-</td></tr></table> -->
-
 
 <p><b>Other Domains and Interdisciplinary Work</b>:</p>
 <ul>
 <li>Codes for emerging computer memory technologies, optimization and aggregate rank recovery, cyber-security and DNS traffic obfuscation, model sensitivity in environmental engineering</li>
 </ul>
 
-
-</p>
-<h3>Surveys & Tutorials 
-
-</h3>
+<h3>Surveys & Tutorials</h3>
 <p>
-
 [S3] M. Mahbub, M. Md. Saym, S. Jahan, A. K. Paul, A. Vahid, et al.,  &ldquo;<a href="https://www.sciencedirect.com/science/article/pii/S2214209625001044">UAV-assisted wireless communications in the 6G-and-beyond era: An extensive survey on characteristics, standardization and regulations, enabling technologies, challenges, and future directions,</a>,&rdquo; Elsevier Vehicular Communications Journal, 2025. <br /> <br />
 	
 [S2] M. Mahbub, M. Md. Saym, S. Jahan, A. K. Paul, A. Vahid, et al.,  &ldquo;<a href="https://www.sciencedirect.com/science/article/abs/pii/S1084804525000281">A Holistic Survey of UAV-Assisted Wireless Communications in the Transition from 5G to 6G: Characteristics, Regulations, Standardization, Enabling Technologies, Intertwined Innovations, Challenges, and Opportunities,</a>,&rdquo; Elsevier Journal of Network and Computer Applications, 2025. <br /> <br />
 	
 [S1] T. M. Hoang, A. Vahid, T. Hoang, and L. Hanzo, &ldquo;<a href="https://ieeexplore.ieee.org/document/10428002">Physical Layer Authentication and Security Design in the Machine Learning Era</a>,&rdquo;  IEEE Communications Surveys & Tutorials, 2024. <br /> <br />
-
-	
 </p>
-<h3>Journal Publications
 
-</h3>
+<h3>Journal Publications</h3>
 <p>
-
 [J41] M. S. Nguyen, P. T. Tin, T. T. Duy, N. T. Hieu, H. A. Mai, A. Vahid, &ldquo;<a href="https://ieeexplore.ieee.org/document/11615084">Short-Packet NOMA With User Pairing Over Fluctuating Nakagami-m Fading Under Imperfect SIC: Achievable Rate and BLER Analysis</a>,&rdquo; IEEE Open Journal of Vehicular Technology, 2026. <br /> <br />
 
 [J40] J. Norolahi, T. M. Hoang, A. Vahid, R. Shah, &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11609747">Wide-Area Distributed RIS-Assisted SATCOM RFI Suppression at Large Radio Telescope Arrays for 6G Spectrum Coexistence</a>,&rdquo;  IEEE Transactions on Wireless Communications, 2026. <br /> <br />
@@ -242,13 +223,10 @@
 [J2] A. Vahid, M. A. Maddah-Ali, S. Avestimehr &ldquo;<a href="http://arxiv.org/abs/1301.5309">Capacity Results for Binary Fading Interference Channels With Delayed CSIT</a>,&rdquo;  IEEE Transactions on Information Theory, vol. 60, no. 10, pp. 6093-6130, 2014. <br /> <br />
 
 [J1] A. Vahid, C. Suh, S. Avestimehr &ldquo;<a href="http://arxiv.org/abs/1103.5426">Interference Channels with Rate-Limited Feedback</a>,&rdquo;  IEEE Transactions on Information Theory, vol. 58, no. 5, pp. 2788-2812, 2012. <br /> <br />
-
-
 </p>
-<h3>Conference Publications
-</h3>
-<p>
 
+<h3>Conference Publications</h3>
+<p>
 [C41] Y. C. Liu, A. Vahid, S. C. Lin, &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11590931">On Generalized Degrees-of-Freedom of Movable Antenna-Aided Broadcast Channels With Delayed CSIT</a>,&rdquo;  IEEE Globecom Workshops, 2025. <br /> <br /> 
 
 [C40] J. Norolahi, T. M. Hoang, A. Vahid, R. Shah, &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11310513">Wide Area SATCOM Interference Mitigation for Radio Telescope Arrays Using Distributed RISs</a>,&rdquo;  IEEE Military Communications (MILCOM), 2025. <br /> <br />
@@ -330,383 +308,204 @@
 [C2] A. Vahid, V. Aggarwal, S. Avestimehr, A. Sabharwal, &ldquo;On the Capacity of Multi-hop Wireless Networks with Partial Network Knowledge,&rdquo;  proceedings Allerton Conference, 2010. <br /> <br />
 
 [C1] A. Vahid and S. Avestimehr, &ldquo;The Two-User Deterministic Interference Channel with Rate-Limited Feedback,&rdquo;  proceedings IEEE International Symposium on Information Theory, 2010. <br /> <br />
-
-
-
 </p>
-<h3>PhD Thesis
-</h3>
+
+<h3>PhD Thesis</h3>
 <p>
-
 A. Vahid, &ldquo;<a href="Thesis-AlirezaVahid.pdf">The Impact of Imperfect Feedback on the Capacity of Wireless Networks</a>.&rdquo; <br /> <br />
-
-
+</p>
 </article>
 
-
-<!-- -->
-<!-- -->
 <!-- Awards -->
-
 <article id="awards">
 <h2 class="major">Awards</h2>
-
-
 <ul>
-<li>Gleason Endowed Professorship, RIT, 2023.
-</li>
-<li>SONY Faculty Innovation Award, 2022.
-</li>
-<li>Dean's Faculty Fellow, CU Denver, 2022.
-</li>
-<li>Best Paper Award at IEEE CCWC with my PhD student, 2020.
-</li>
-<li>Lab Venture Challenge Award, 2019.
-</li>
-<li>New Faculty Research Award, CU Denver, 2019.
-</li>
-<li>Creative Research Collaborative (CRC) Fellowship, CU Denver, 2018.
-</li>
-<li>Best PhD Thesis Award, Cornell University, 2015.
-</li>
-<li>Qualcomm Innovation Award Winner (Innovation Title: Collaborative Interference Management), 2013.
-</li>
-<li>Director's PhD Teaching Assistant Award, Cornell University, 2011.
-</li>
-<li>Jacobs Scholar Fellowship, School of ECE, Cornell University, 2009.
-</li>
-<li><a href="https://www.isna.ir/news/8306-08021/%D9%86%D9%81%D8%B1%D8%A7%D8%AA-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%D9%8A-%D8%B3%D8%A7%D9%84-83-%D9%85%D8%B9%D8%B1%D9%81%D9%8A-%D8%B4%D8%AF%D9%86%D8%AF">Ranked 2nd</a> among over 360,000 participants in Iranian National University Entrance Exam, 2004.
-</li>
+<li>Gleason Endowed Professorship, RIT, 2023.</li>
+<li>SONY Faculty Innovation Award, 2022.</li>
+<li>Dean's Faculty Fellow, CU Denver, 2022.</li>
+<li>Best Paper Award at IEEE CCWC with my PhD student, 2020.</li>
+<li>Lab Venture Challenge Award, 2019.</li>
+<li>New Faculty Research Award, CU Denver, 2019.</li>
+<li>Creative Research Collaborative (CRC) Fellowship, CU Denver, 2018.</li>
+<li>Best PhD Thesis Award, Cornell University, 2015.</li>
+<li>Qualcomm Innovation Award Winner (Innovation Title: Collaborative Interference Management), 2013.</li>
+<li>Director's PhD Teaching Assistant Award, Cornell University, 2011.</li>
+<li>Jacobs Scholar Fellowship, School of ECE, Cornell University, 2009.</li>
+<li><a href="https://www.isna.ir/news/8306-08021/%D9%86%D9%81%D8%B1%D8%A7%D8%AA-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%8BD-%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%D9%8A-%D8%B3%D8%A7%D9%84-83-%D9%85%D8%B9%D8%B1%D9%81%D9%8A-%D8%B4%D8%AF%D9%86%D8%AF">Ranked 2nd</a> among over 360,000 participants in Iranian National University Entrance Exam, 2004.</li>
 <li>Silver medal, Iranian National Physics Olympiad, 2003.</li>
+</ul>
 </article>
 
-	
-
-<!-- -->
-<!-- -->
 <!-- News -->
-
 <article id="news">
 <h2 class="major">Recent News</h2>
-
-<li>July 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/document/11615084">short-packet NOMA</a>&rdquo; in IEEE OJVT!
-</li>
-<li>July 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11609747">LEO RFI mitigation at large radio astronomy facilities</a>&rdquo; in IEEE Transactions on Wireless Communications!
-</li>
-<li>May 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our two recent papers on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11520955">adaptive beampatterns in DFRC systems</a>&rdquo; in IEEE TMLCN and &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11503807">5G NR-compliant beam management for spectrum sharing</a>&rdquo; in IEEE OJVT!
-</li>
-<li>April 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11494404">noisy torn-paper channel</a>&rdquo; in IEEE Transactions on Information Theory!
-</li>
-<li>December 2025 <span style="color: #00f2ff">[Conference Publication]</span>: Dr. Shih-Chun Lin (NTU) presented our joint work on generalized DoF in movable antenna-aided networks at the 2025 IEEE Globecom.
-</li>
-<li>December 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/document/11263892">non-stationary wireless networks with controllable statistics</a>&rdquo; in IEEE Transactions on Communications!
-</li>
-<li>December 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our survey paper on &ldquo;<a href="https://www.sciencedirect.com/science/article/pii/S2214209625001044">UAV-assisted wireless communications in the 6G-and-beyond era</a>&rdquo;!
-</li>
-<li>October 2025 <span style="color: #00f2ff">[Conference Publication]</span>: Our team presented our work on SATCOM RFI mitigation at ground stations at IEEE MILCOM'25 in Los Angeles.
-</li>	
-<li>August 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our two recent papers on applications of machine learning in &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11142958">rate-split multiple access</a>&rdquo; (IEEE Trans. on Wireless Comm.) and &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11131170">secure movable antenna-aided communications</a>&rdquo; (IEEE IoTJ)!
-</li>
-<li>August 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our recent paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11131327">5G and radio astronomy coexistence</a>&rdquo; (IEEE TCCN)!
-</li>
-<li>July 2025 <span style="color: #ff33ff">[Award/Grant]</span>: NSF grant to develop an Information Theory for Out-of-Order Media!  
-</li>
-<li>June 2025 <span style="color: #00f2ff">[Conference Publication]</span>: Our team presented two papers at IEEE ICC'25 in Montreal.
-</li>
-<li>April 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10974697">Active RIS-aided IoT Systems</a>&rdquo;!
-</li>
-<li>February 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our latest survey on &ldquo;<a href="https://www.sciencedirect.com/science/article/pii/S1084804525000281">UAV-Assisted Wireless Communications in the Transition from 5G to 6G</a>&rdquo;!
-</li>	
-<li>January 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10818689">Capacity Gains with Dynamic Position Plan in Distributed Movable Antenna-Aided Networks</a>&rdquo; in IEEE COMML!
-</li>
-<li>January 2025 <span style="color: #00f2ff">[Conference Publication]</span>: We presented two papers at IEEE CCNC'25 in Las Vegas.
-</li>
-<li>October 2024 <span style="color: #00f2ff">[Service]</span>: I am excited to announce that I have joined the editorial board of IEEE Transactions on Information Theory!
-</li>
-<li>August 2024 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10623503">Movable Antenna-Aided Broadcast Packet Erasure Channels</a>&rdquo; in IEEE COMML!
-</li>
-<li>August 2024 <span style="color: #00f2ff">[Team update]</span>: Masoumeh successfully defended her PhD at CU Denver and joins Charles Schwab. Congratulations!
-</li>
-<li>July 2024 <span style="color: #00f2ff">[Center update]</span>: <a href="https://smarthub.research.baylor.edu/news/story/2024/smart-hub-holds-first-center-meeting-baylor-university">SMART Hub holds first center meeting at Baylor University</a>.
-</li>
-<li>May 2024 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/document/10536001">An Information Theory for Out-of-Order Media</a>&rdquo;!
-</li>
-<li>April 2024 <span style="color: #00f2ff">[Conference Publication]</span>: Our work on non-ergodic bi-modal broadcast channels to appear in ISIT'24.
-</li>
-<li>April 2024 <span style="color: #00f2ff">[Service]</span>: I will chair CISS-12: Wireless Security at ICC'24.   
-</li>
-<li>March 2024 <span style="color: #00f2ff">[Invited talk]</span>: I will give a talk at the FIND Seminar, Cornell University.
-</li>
-<li>February 2024 <span style="color: #00f2ff">[Journal Publication]</span>: &ldquo;<a href="https://ieeexplore.ieee.org/document/10428002">Physical Layer Authentication and Security Design in the Machine Learning Era</a>&rdquo; is published in IEEE Communications Surveys & Tutorials.
-</li>
-<li>January 2024 <span style="color: #00f2ff">[Conference Publication]</span>: Two papers to appear in ICC'24.
-</li>
-<li>November 2023 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/document/10325527">DNA Merge-Sort</a>&rdquo; in IEEE Transactions on Communications!
-</li>
-<li>November 2023 <span style="color: #ff33ff">[Award/Grant]</span>: SMART Hub is funded as a national spectrum innovation center!  
-</li>
-<li>October 2023 <span style="color: #00f2ff">[Conference Publication]</span>: GreenMO is in the proceedings of MobiCom 2023.
-</li>
-<li>August 2023 <span style="color: #00f2ff">[Journal Publication]</span>: Two papers on RIS-aided communications accepted in IEEE Internet of Things Journal.
-</li>
-<li>August 2023 <span style="color: #00f2ff">[Service]</span>: I will serve as a Technical Program Committee member at IEEE DySPAN'24 and ICC'24.   
-</li>
-<li>August 2023 <span style="color: #00f2ff">[Team update]</span>: I join Rochester Institute of Technology as a Gleason Chair Associate Professor of Electrical and Microelectronic Engineering.
-</li> 
-<li>June 2023 <span style="color: #00f2ff">[Team update]</span>: Sajjad successfully defended his PhD dissertation. Congratulations!
-</li>
 <ul>
-<li>April 2023 <span style="color: #ff33ff">[Promotion]</span>: Tenure and promotion to the rank of associate professor, CU Denver. 
-</li>
-<li>April 2023 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk for the math club members at <a href="https://www.coloradoacademy.org/">the Colorado Academy high school</a>. 
-</li>
-<li>April 2023 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper on broadcast channels with alternating single-user CSI is accepted in ISIT 2023.
-</li>
-<li>March 2023 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on secrecy-rate optimization of space-ground networks is accepted in IEEE Internet of Things Journal.
-</li>
-<li>February 2023 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk on WiFi security at <a href="https://bigdata.duke.edu/programs/air-force-center-of-excellence/">the Air Force Center of Excellence</a>.  
-</li>
-<li>January 2023 <span style="color: #00f2ff">[Team update]</span>: Dr. Dinh-Thuan Do was offered a tenure-track position. Congratulations!
-</li>
-<li>December 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on spectrum-efficient UAV-assisted IoT systems is accepted in IEEE Internet of Things Journal.
-</li>	
-<li>November 2022 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk at CU Boulder.  
-</li>
-<li>November 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on practical defense against traffic analysis attacks is accepted in Computers & Security journal.
-</li>
-<li>November 2022 <span style="color: #ff33ff">[Award/Grant]</span>: I received the <b>SONY Faculty Innovation Award</b>.  
-</li>
-<li>October 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on power-efficient interference suppression with binary antennas is published in IEEE Transactions on Wireless Communications.
-</li>
-<li>September 2022 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk on spectrum coexistence and sequence assembly at the Institute for the Wireless Internet of Things (WIoT) at Northeastern.  
-</li>
-<li>September 2022 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk on wireless networking and data storage as part of the ECE colloquium series at Tufts University.  
-</li>
-<li>September 2022 <span style="color: #ff33ff">[Grant]</span>: Our proposal on spectrum sensing and coexistence was selected for funding by the <b>National Science Foundation</b>.  
-</li>
-<li>August 2022 <span style="color: #ff33ff">[Grant]</span>: Our proposal on computational antennas was selected for funding by the <b>National Science Foundation</b>.  
-</li>
-<li>July 2022 <span style="color: #00f2ff">[Service]</span>: I joined the editorial board of IEEE Communications Letters (COMML).   
-</li>
-<li>June 2022 <span style="color: #00f2ff">[New team member]</span>: Welcoming Dr. Michael Huntington to our team for Summer'22 (supported by NSF RET).
-</li>
-<li>May 2022 <span style="color: #00f2ff">[New team member]</span>: Welcoming Dr. Tiep M Hoang to our team as a Postdoctoral Researcher.
-</li>
-<li>April 2022 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;Capacity of the Shotgun Sequencing Channel&rdquo; with Aditya Ravi and Dr. Ilan Shomorony of UIUC is accepted in IEEE International Symposium on Information Theory (ISIT).
-</li>
-<li>April 2022 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper on defense mechanism agains traffic analysis attacks is accepted in ACM SACTMAT.
-</li>
-<li>February 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;Coded Shotgun Sequencing&rdquo; with Aditya Ravi and Dr. Ilan Shomorony of UIUC is accepted in IEEE Journal on Selected Areas in Information Theory.
-</li>
-<li>January 2022 <span style="color: #00f2ff">[New team member]</span>: Welcoming Dr. Dinh-Thuan Do to our team as a Postdoctoral Researcher.
-</li>
-<li>January 2022 <span style="color: #ff33ff">[Award]</span>: Honored to have been selected as the first-ever Dean's Faculty Fellow at the College of Engineering, Design, and Computing of CU Denver.
-</li>
-<li>November 2021 <span style="color: #00f2ff">[Journal Publication]</span>: My paper on topological content delivery is accepted for publication in IEEE Journal on Selected Areas in Information Theory.
-</li>
-<li>November 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the capacity of broadcast channels with random cache with Drs. Shih-Chun Lin and I-Hsiang Wang of NTU is accepted for publication in IEEE Journal on Selected Areas in Information Theory.
-</li>
-<li>September 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;Torn-Paper Coding&rdquo; with Dr. Ilan Shomorony of UIUC is accepted in IEEE Transactions on Information Theory.
-</li>
-<li>September 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on interference suppression with reconfigurable antennas is accepted in IEEE Transactions on Wireless Communications.
-</li>
-<li>August 2021 <span style="color: #00f2ff">[Conference Publication]</span>: One paper to appear in IEEE GLOBECOM 2021.
-</li>
-<li>August 2021 <span style="color: #ff33ff">[Grant]</span>: Our proposal on smart surfaces was selected for funding by the <b>National Science Foundation</b>.  
-</li>
-<li>August 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the capacity of broadcast channels with single-user CSI is published in IEEE Transactions on Information Theory.
-</li>
-<li>July 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the stability region of intermittent interference networks is published in IEEE Transactions on Communications.
-</li>
-<li>July 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the capacity of erasure broadcast channels with intermittent feedback is published in IEEE Transactions on Communications.
-</li>
-<li>June 2021 <span style="color: #ff33ff">[Award]</span>: I was selected as one of the recipients of the Dean's Faculty Fellow program at CU Denver.
-</li>
-<li>April 2021 <span style="color: #00f2ff">[Conference Publication]</span>: Two papers to appear in IEEE ISIT 2021.
-</li>
-<li>March 2021 <span style="color: #00f2ff">[Service]</span>: I served as a Technical Program Committee member at ISIT'21.   
-</li>
-<li>February 2021 <span style="color: #00f2ff">[Service]</span>: I served as a Technical Program Committee member at NVMW'21.   
-</li>
-<li>December 2020 <span style="color: #00f2ff">[Conference Publication]</span>: Two papers presented at IEEE GLOBECOM. Thanks to Dr. Ilan Shomorony of UIUC, and Dr. Shih-Chun Lin of NTUST.   
-</li>
-<li>December 2020 <span style="color: #00f2ff">[Conference Publication]</span>: One paper presented at AGU Fall Meeting. Thanks to Mozhgan Farahani and Dr. Allison Goodwell of CU Denver.   
-</li>
-<li>November 2020 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;Embedded Codes for Reassembling Non-Overlapping Random DNA Fragments,&rdquo; is published in IEEE Transactions on Molecular, Biological, and Multi-Scale Communications.  
-</li>
-<li>August 2020 <span style="color: #ff33ff">[Grant]</span>: Our proposal on cross-layer interference management was selected for funding by the <b>National Science Foundation</b>.  
-</li>
-<li>June 2020 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;Embedding Information In Radiation Pattern Fluctuations,&rdquo; was presented at ISIT,2020.  
-</li>
-<li>November 2019 <span style="color: #ff33ff">[Award/Grant]</span>: I received the <b>2019 Lab Venture Challenge Award</b>.  
-</li>
-<li>November 2019 <span style="color: #ff33ff">[Grant]</span>: I received funding from the <b>State of Colorado</b> to commercialize my research in wireless networking.  
-</li>
-<li>August 2019 <span style="color: #00f2ff">[Conference Publication]</span>: I will give a talk on &ldquo;Capacity Results for Erasure Broadcast Channels with Intermittent Feedback,&rdquo; at ITW, Visby, Sweden.  
-</li>
-<li>May 2019 <span style="color: #00f2ff">[Invited Talk]</span>: I will give a talk on &ldquo;Improving High Performance Memory through Information Theory,&rdquo; at the CS Department.  
-</li>
-<li>April 2019 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;GreenFlag: Protecting 3D-Racetrack Memory from Shift Errors,&rdquo; has been nominated as a best paper award candidate at DSN 2019! 
-</li>
-<li>April 2019 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;No Feedback, No Problem: Capacity of Erasure Broadcast Channels with Single-User Delayed CSI,&rdquo; has been accepted for presentation at ISIT 2019. 
-</li>
-<li>March 2019 <span style="color: #ff33ff">[Award/Grant]</span>: I received the 2019 New Faculty Research Award from the University of Colorado.
-</li>
-<li>March 2019 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;On the Degrees-of-Freedom of Two-Unicast Wireless Networks with Delayed CSIT,&rdquo; has been accepted for publication in IEEE Transactions on Information Theory. 
-</li>
+<li>July 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/document/11615084">short-packet NOMA</a>&rdquo; in IEEE OJVT!</li>
+<li>July 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11609747">LEO RFI mitigation at large radio astronomy facilities</a>&rdquo; in IEEE Transactions on Wireless Communications!</li>
+<li>May 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our two recent papers on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11520955">adaptive beampatterns in DFRC systems</a>&rdquo; in IEEE TMLCN and &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11503807">5G NR-compliant beam management for spectrum sharing</a>&rdquo; in IEEE OJVT!</li>
+<li>April 2026 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11494404">noisy torn-paper channel</a>&rdquo; in IEEE Transactions on Information Theory!</li>
+<li>December 2025 <span style="color: #00f2ff">[Conference Publication]</span>: Dr. Shih-Chun Lin (NTU) presented our joint work on generalized DoF in movable antenna-aided networks at the 2025 IEEE Globecom.</li>
+<li>December 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/document/11263892">non-stationary wireless networks with controllable statistics</a>&rdquo; in IEEE Transactions on Communications!</li>
+<li>December 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our survey paper on &ldquo;<a href="https://www.sciencedirect.com/science/article/pii/S2214209625001044">UAV-assisted wireless communications in the 6G-and-beyond era</a>&rdquo;!</li>
+<li>October 2025 <span style="color: #00f2ff">[Conference Publication]</span>: Our team presented our work on SATCOM RFI mitigation at ground stations at IEEE MILCOM'25 in Los Angeles.</li>	
+<li>August 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our two recent papers on applications of machine learning in &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11142958">rate-split multiple access</a>&rdquo; (IEEE Trans. on Wireless Comm.) and &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11131170">secure movable antenna-aided communications</a>&rdquo; (IEEE IoTJ)!</li>
+<li>August 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our recent paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/11131327">5G and radio astronomy coexistence</a>&rdquo; (IEEE TCCN)!</li>
+<li>July 2025 <span style="color: #ff33ff">[Award/Grant]</span>: NSF grant to develop an Information Theory for Out-of-Order Media!</li>
+<li>June 2025 <span style="color: #00f2ff">[Conference Publication]</span>: Our team presented two papers at IEEE ICC'25 in Montreal.</li>
+<li>April 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our paper on &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10974697">Active RIS-aided IoT Systems</a>&rdquo;!</li>
+<li>February 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out our latest survey on &ldquo;<a href="https://www.sciencedirect.com/science/article/pii/S1084804525000281">UAV-Assisted Wireless Communications in the Transition from 5G to 6G</a>&rdquo;!</li>	
+<li>January 2025 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10818689">Capacity Gains with Dynamic Position Plan in Distributed Movable Antenna-Aided Networks</a>&rdquo; in IEEE COMML!</li>
+<li>January 2025 <span style="color: #00f2ff">[Conference Publication]</span>: We presented two papers at IEEE CCNC'25 in Las Vegas.</li>
+<li>October 2024 <span style="color: #00f2ff">[Service]</span>: I am excited to announce that I have joined the editorial board of IEEE Transactions on Information Theory!</li>
+<li>August 2024 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/abstract/document/10623503">Movable Antenna-Aided Broadcast Packet Erasure Channels</a>&rdquo; in IEEE COMML!</li>
+<li>August 2024 <span style="color: #00f2ff">[Team update]</span>: Masoumeh successfully defended her PhD at CU Denver and joins Charles Schwab. Congratulations!</li>
+<li>July 2024 <span style="color: #00f2ff">[Center update]</span>: <a href="https://smarthub.research.baylor.edu/news/story/2024/smart-hub-holds-first-center-meeting-baylor-university">SMART Hub holds first center meeting at Baylor University</a>.</li>
+<li>May 2024 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/document/10536001">An Information Theory for Out-of-Order Media</a>&rdquo;!</li>
+<li>April 2024 <span style="color: #00f2ff">[Conference Publication]</span>: Our work on non-ergodic bi-modal broadcast channels to appear in ISIT'24.</li>
+<li>April 2024 <span style="color: #00f2ff">[Service]</span>: I will chair CISS-12: Wireless Security at ICC'24.</li>
+<li>March 2024 <span style="color: #00f2ff">[Invited talk]</span>: I will give a talk at the FIND Seminar, Cornell University.</li>
+<li>February 2024 <span style="color: #00f2ff">[Journal Publication]</span>: &ldquo;<a href="https://ieeexplore.ieee.org/document/10428002">Physical Layer Authentication and Security Design in the Machine Learning Era</a>&rdquo; is published in IEEE Communications Surveys & Tutorials.</li>
+<li>January 2024 <span style="color: #00f2ff">[Conference Publication]</span>: Two papers to appear in ICC'24.</li>
+<li>November 2023 <span style="color: #00f2ff">[Journal Publication]</span>: Check out &ldquo;<a href="https://ieeexplore.ieee.org/document/10325527">DNA Merge-Sort</a>&rdquo; in IEEE Transactions on Communications!</li>
+<li>November 2023 <span style="color: #ff33ff">[Award/Grant]</span>: SMART Hub is funded as a national spectrum innovation center!</li>
+<li>October 2023 <span style="color: #00f2ff">[Conference Publication]</span>: GreenMO is in the proceedings of MobiCom 2023.</li>
+<li>August 2023 <span style="color: #00f2ff">[Journal Publication]</span>: Two papers on RIS-aided communications accepted in IEEE Internet of Things Journal.</li>
+<li>August 2023 <span style="color: #00f2ff">[Service]</span>: I will serve as a Technical Program Committee member at IEEE DySPAN'24 and ICC'24.</li>
+<li>August 2023 <span style="color: #00f2ff">[Team update]</span>: I join Rochester Institute of Technology as a Gleason Chair Associate Professor of Electrical and Microelectronic Engineering.</li> 
+<li>June 2023 <span style="color: #00f2ff">[Team update]</span>: Sajjad successfully defended his PhD dissertation. Congratulations!</li>
+<li>April 2023 <span style="color: #ff33ff">[Promotion]</span>: Tenure and promotion to the rank of associate professor, CU Denver.</li>
+<li>April 2023 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk for the math club members at <a href="https://www.coloradoacademy.org/">the Colorado Academy high school</a>.</li> 
+<li>April 2023 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper on broadcast channels with alternating single-user CSI is accepted in ISIT 2023.</li>
+<li>March 2023 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on secrecy-rate optimization of space-ground networks is accepted in IEEE Internet of Things Journal.</li>
+<li>February 2023 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk on WiFi security at <a href="https://bigdata.duke.edu/programs/air-force-center-of-excellence/">the Air Force Center of Excellence</a>.</li>  
+<li>January 2023 <span style="color: #00f2ff">[Team update]</span>: Dr. Dinh-Thuan Do was offered a tenure-track position. Congratulations!</li>
+<li>December 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on spectrum-efficient UAV-assisted IoT systems is accepted in IEEE Internet of Things Journal.</li>	
+<li>November 2022 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk at CU Boulder.</li>
+<li>November 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on practical defense against traffic analysis attacks is accepted in Computers & Security journal.</li>
+<li>November 2022 <span style="color: #ff33ff">[Award/Grant]</span>: I received the <b>SONY Faculty Innovation Award</b>.</li>
+<li>October 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on power-efficient interference suppression with binary antennas is published in IEEE Transactions on Wireless Communications.</li>
+<li>September 2022 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk on spectrum coexistence and sequence assembly at the Institute for the Wireless Internet of Things (WIoT) at Northeastern.</li>  
+<li>September 2022 <span style="color: #00f2ff">[Invited talk]</span>: I gave a talk on wireless networking and data storage as part of the ECE colloquium series at Tufts University.</li>  
+<li>September 2022 <span style="color: #ff33ff">[Grant]</span>: Our proposal on spectrum sensing and coexistence was selected for funding by the <b>National Science Foundation</b>.</li>  
+<li>August 2022 <span style="color: #ff33ff">[Grant]</span>: Our proposal on computational antennas was selected for funding by the <b>National Science Foundation</b>.</li>  
+<li>July 2022 <span style="color: #00f2ff">[Service]</span>: I joined the editorial board of IEEE Communications Letters (COMML).</li>   
+<li>June 2022 <span style="color: #00f2ff">[New team member]</span>: Welcoming Dr. Michael Huntington to our team for Summer'22 (supported by NSF RET).</li>
+<li>May 2022 <span style="color: #00f2ff">[New team member]</span>: Welcoming Dr. Tiep M Hoang to our team as a Postdoctoral Researcher.</li>
+<li>April 2022 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;Capacity of the Shotgun Sequencing Channel&rdquo; with Aditya Ravi and Dr. Ilan Shomorony of UIUC is accepted in IEEE International Symposium on Information Theory (ISIT).</li>
+<li>April 2022 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper on defense mechanism agains traffic analysis attacks is accepted in ACM SACTMAT.</li>
+<li>February 2022 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;Coded Shotgun Sequencing&rdquo; with Aditya Ravi and Dr. Ilan Shomorony of UIUC is accepted in IEEE Journal on Selected Areas in Information Theory.</li>
+<li>January 2022 <span style="color: #00f2ff">[New team member]</span>: Welcoming Dr. Dinh-Thuan Do to our team as a Postdoctoral Researcher.</li>
+<li>January 2022 <span style="color: #ff33ff">[Award]</span>: Honored to have been selected as the first-ever Dean's Faculty Fellow at the College of Engineering, Design, and Computing of CU Denver.</li>
+<li>November 2021 <span style="color: #00f2ff">[Journal Publication]</span>: My paper on topological content delivery is accepted for publication in IEEE Journal on Selected Areas in Information Theory.</li>
+<li>November 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the capacity of broadcast channels with random cache with Drs. Shih-Chun Lin and I-Hsiang Wang of NTU is accepted for publication in IEEE Journal on Selected Areas in Information Theory.</li>
+<li>September 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;Torn-Paper Coding&rdquo; with Dr. Ilan Shomorony of UIUC is accepted in IEEE Transactions on Information Theory.</li>
+<li>September 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on interference suppression with reconfigurable antennas is accepted in IEEE Transactions on Wireless Communications.</li>
+<li>August 2021 <span style="color: #00f2ff">[Conference Publication]</span>: One paper to appear in IEEE GLOBECOM 2021.</li>
+<li>August 2021 <span style="color: #ff33ff">[Grant]</span>: Our proposal on smart surfaces was selected for funding by the <b>National Science Foundation</b>.</li>  
+<li>August 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the capacity of broadcast channels with single-user CSI is published in IEEE Transactions on Information Theory.</li>
+<li>July 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the stability region of intermittent interference networks is published in IEEE Transactions on Communications.</li>
+<li>July 2021 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper on the capacity of erasure broadcast channels with intermittent feedback is published in IEEE Transactions on Communications.</li>
+<li>June 2021 <span style="color: #ff33ff">[Award]</span>: I was selected as one of the recipients of the Dean's Faculty Fellow program at CU Denver.</li>
+<li>April 2021 <span style="color: #00f2ff">[Conference Publication]</span>: Two papers to appear in IEEE ISIT 2021.</li>
+<li>March 2021 <span style="color: #00f2ff">[Service]</span>: I served as a Technical Program Committee member at ISIT'21.</li>   
+<li>February 2021 <span style="color: #00f2ff">[Service]</span>: I served as a Technical Program Committee member at NVMW'21.</li>   
+<li>December 2020 <span style="color: #00f2ff">[Conference Publication]</span>: Two papers presented at IEEE GLOBECOM. Thanks to Dr. Ilan Shomorony of UIUC, and Dr. Shih-Chun Lin of NTUST.</li>   
+<li>December 2020 <span style="color: #00f2ff">[Conference Publication]</span>: One paper presented at AGU Fall Meeting. Thanks to Mozhgan Farahani and Dr. Allison Goodwell of CU Denver.</li>   
+<li>November 2020 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;Embedded Codes for Reassembling Non-Overlapping Random DNA Fragments,&rdquo; is published in IEEE Transactions on Molecular, Biological, and Multi-Scale Communications.</li>  
+<li>August 2020 <span style="color: #ff33ff">[Grant]</span>: Our proposal on cross-layer interference management was selected for funding by the <b>National Science Foundation</b>.</li>  
+<li>June 2020 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;Embedding Information In Radiation Pattern Fluctuations,&rdquo; was presented at ISIT,2020.</li>  
+<li>November 2019 <span style="color: #ff33ff">[Award/Grant]</span>: I received the <b>2019 Lab Venture Challenge Award</b>.</li>  
+<li>November 2019 <span style="color: #ff33ff">[Grant]</span>: I received funding from the <b>State of Colorado</b> to commercialize my research in wireless networking.</li>  
+<li>August 2019 <span style="color: #00f2ff">[Conference Publication]</span>: I will give a talk on &ldquo;Capacity Results for Erasure Broadcast Channels with Intermittent Feedback,&rdquo; at ITW, Visby, Sweden.</li>  
+<li>May 2019 <span style="color: #00f2ff">[Invited Talk]</span>: I will give a talk on &ldquo;Improving High Performance Memory through Information Theory,&rdquo; at the CS Department.</li>  
+<li>April 2019 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;GreenFlag: Protecting 3D-Racetrack Memory from Shift Errors,&rdquo; has been nominated as a best paper award candidate at DSN 2019!</li> 
+<li>April 2019 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;No Feedback, No Problem: Capacity of Erasure Broadcast Channels with Single-User Delayed CSI,&rdquo; has been accepted for presentation at ISIT 2019.</li> 
+<li>March 2019 <span style="color: #ff33ff">[Award/Grant]</span>: I received the 2019 New Faculty Research Award from the University of Colorado.</li>
+<li>March 2019 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;On the Degrees-of-Freedom of Two-Unicast Wireless Networks with Delayed CSIT,&rdquo; has been accepted for publication in IEEE Transactions on Information Theory.</li> 
+</ul>
 </article>
 
-
-
-
-
-<!-- -->
-<!-- -->
-<!-- Funding-->
-
+<!-- Funding -->
 <article id="funding">
 <h2 class="major">Funding</h2>
- 
 <ul>
-<li> NSF CCF 2025 (total project budget: $600k, role: PI). Topic: An Information Theory for Out-of-Order Media.  
-</li>
-<li> SMART HUB 2023 (total center budget: $5m, role: center PI). Topic: Spectrum management.  
-</li>
-<li> SONY 2022 (total project budget: $100k, role: PI). Topic: Beyond beamforming in wireless communications.  
-</li>
-<li> NSF AST 2022 (total project budget: $1.5m, role: PI). Topic: Spectrum sensing and coexistence.  
-</li>
-<li> NSF CNS 2022 (total project budget: $1.1m, role: PI). Topic: Computational Antennas.  
-</li>
-<li> NSF CNS 2021 (total project budget: $500k, role: PI). Topic: Smart surfaces.  
-</li>
-<li> NSF ECCS 2020 (total project budget: $500k, role: PI). Topic: Cross-layer interference management.  
-</li>
-<li> Lab Venture Partners 2019 (total project budget: $125k, role: PI). Topic: Theia the antenna.  
-</li>
-<li> State of Colorado 2019 (total project budget: $90k, role: PI). Topic: Opportunistic communications in dynamic systems.
-</li>
-<li> Qualcomm Inc. (total project budget: $100k, role: PI). Topic: Collaborative interference management.
-</li>
+<li> NSF CCF 2025 (total project budget: $600k, role: PI). Topic: An Information Theory for Out-of-Order Media.</li>
+<li> SMART HUB 2023 (total center budget: $5m, role: center PI). Topic: Spectrum management.</li>
+<li> SONY 2022 (total project budget: $100k, role: PI). Topic: Beyond beamforming in wireless communications.</li>
+<li> NSF AST 2022 (total project budget: $1.5m, role: PI). Topic: Spectrum sensing and coexistence.</li>
+<li> NSF CNS 2022 (total project budget: $1.1m, role: PI). Topic: Computational Antennas.</li>
+<li> NSF CNS 2021 (total project budget: $500k, role: PI). Topic: Smart surfaces.</li>
+<li> NSF ECCS 2020 (total project budget: $500k, role: PI). Topic: Cross-layer interference management.</li>
+<li> Lab Venture Partners 2019 (total project budget: $125k, role: PI). Topic: Theia the antenna.</li>
+<li> State of Colorado 2019 (total project budget: $90k, role: PI). Topic: Opportunistic communications in dynamic systems.</li>
+<li> Qualcomm Inc. (total project budget: $100k, role: PI). Topic: Collaborative interference management.</li>
+</ul>
 </article>
 
-
-
-
-
-
-
-
-<!-- -->
-<!-- -->
-<!-- Team-->
-
+<!-- Team -->
 <article id="team">
-<h2 class="major">Team</h2>
-	
+<h2 class="major">Team</h2>	
 <img src="images/team2022.jpg" alt="alt text" width="500px" />
-
 <p>Vahid team at CU Denver, Summer 2022.</p>
-	
-<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
 
-
-<p><span style="color: #ff33ff">Available positions</span>:
-
+<p><span style="color: #ff33ff">Available positions</span>:</p>
 <p>Available PhD and postdoc positions in my group at RIT. Some positions may be restricted to U.S. citizens or permanent residents per funding agency requirement. Candidates are encouraged to submit their C.V. to me directly via email and include any information that may facilitate the process.</p>
 	
-	
-<p>Postdoc(s):
-</p>
+<p>Postdoc(s):</p>
 <ul>
 <li><a href="https://sites.google.com/view/tiep-m-hoang/">Tiep M. Hoang, PhD</a></li>
 </ul>
 	
-	
-<p>PhD student(s):
-</p>
+<p>PhD student(s):</p>
 <ul>
 <li>Jafar Norolahi</li>
 <li>Nisanur Camuzcu</li>
 <li>Shima Mashhadi</li>
 </ul>
 
-<p>Undergraduate(s):
-</p>
+<p>Undergraduate(s):</p>
 <ul>
 <li>Timothy McCaffrey (supported by NSF REU, completed work in fall'21)</li>
 </ul>
 
-	
-<p>High-school teacher:
-</p>
+<p>High-school teacher:</p>
 <ul>
 <li>Michael Huntington, PhD (supported by NSF RET)</li>
 </ul>
 	
-<p>High-school student intern(s):
-</p>
+<p>High-school student intern(s):</p>
 <ul>
 <li>Judith Pacheco-Delgado</li>
 </ul>
 
-	
-<p>Former member(s):
-</p>
+<p>Former member(s):</p>
 <ul>
 <li>Masoumeh Abolfathi, PhD (former PhD student at CU Denver co-advised with Prof. Jafarian): Quantitative Analyst, Cybersecurity Data Science at Charles Schwab.</li>
 <li>Sajjad Nassirpour, PhD (former PhD student at CU Denver): Postdoc at San Diego State University</li>
 <li><a href="https://sites.google.com/site/thuannthu/">Dinh-Thuan Do, PhD</a> (former postdoc): Tenure-track assistant prof. at the University of Mount Union</li>
 </ul>
-	
-	
-
 </article>
 
-<!-- -->
-<!-- -->
-<!-- Funding-->
-
+<!-- Service -->
 <article id="service">
 <h2 class="major">Service</h2>
- 
-<p><br />
 <ul>
-<li> 2021: Technical Program Chair (TPC) at IEEE International Symposium on Information Theory (ISIT).  
-</li>
-<li> 2021: Technical Program Chair (TPC) at Non-Volatile Memories Workshop (NVMW).  
-</li>
-<li> 2020: Chair of the student travel award at IEEE International Symposium on Information Theory (ISIT).  
-</li>
-<li> 2020: Reviewer for Creative Research Collaborative (CRC) award at CU Denver.  
-</li>
-<li> 2020: Committee member to revamp the Electrical Engineering undergraduate curriculum at CU Denver.  
-</li>
+<li> 2021: Technical Program Chair (TPC) at IEEE International Symposium on Information Theory (ISIT).</li>
+<li> 2021: Technical Program Chair (TPC) at Non-Volatile Memories Workshop (NVMW).</li>
+<li> 2020: Chair of the student travel award at IEEE International Symposium on Information Theory (ISIT).</li>
+<li> 2020: Reviewer for Creative Research Collaborative (CRC) award at CU Denver.</li>
+<li> 2020: Committee member to revamp the Electrical Engineering undergraduate curriculum at CU Denver.</li>
+</ul>
 </article>
 
-
-
-<!-- -->
-<!-- -->
 <!-- Contact -->
-
 <article id="contact">
 <h2 class="major">Contact</h2>
-
-
-<br />Email: <br />arveme@rit.edu</a>
-
+<br />Email: <br />arveme@rit.edu
 <br />The best way to reach me is via email. Please use your official email address.
-
-<br />
-<!-- <br /> Office: <br />2423 North Classroom Building &ndash; University of Colorado Denver <br /> -->
-
 </article>
 
-<!-- -->
-<!-- -->
 <!-- Teaching -->
-
 <article id="teaching">
 <h2 class="major">Teaching</h2>
 
@@ -718,20 +517,14 @@ A. Vahid, &ldquo;<a href="Thesis-AlirezaVahid.pdf">The Impact of Imperfect Feedb
 <li>Data Inference Theory and Applications (EEEE789) &#8212; Spring'24</li>
 </ul>
 
-	
 <p><b>University of Colorado Denver</b>:</p>
 <ul>
 <li>Digital Communications (ELEC 4248/5248) &#8212; Spring'18, 19, 20</li>
-
 <li>Random Processes for Engineers (ELEC 5617) &#8212; Fall'18, 19, 20, 21, 22</li>
-	
 <li>Digital Signal Processing (ELEC 4637/5637) &#8212; Spring'21</li>
-	
 <li>Engineering Probability and Statistics (ELEC 3817) &#8212; Spring'19</li>
-
 <li>Information Theory (ELEC 5250) &#8212; Fall'17, 19</li>
 </ul>
-
 
 <p><b>Duke University</b>:</p>
 <ul>
@@ -742,34 +535,28 @@ A. Vahid, &ldquo;<a href="Thesis-AlirezaVahid.pdf">The Impact of Imperfect Feedb
 <ul>
 <li>Teaching assistant for Random Signals in Communication. Winner of the Director's PhD Best Teaching Award.</li>
 </ul>
-	
-
 </article>
 
+<!-- Elements -->
+<article id="elements">
+<h2 class="major">Elements</h2>
 
-
-
-
-					<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+<section>
+	<h3 class="major">Text</h3>
+	<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+	This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+	This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+	<hr />
+	<h2>Heading Level 2</h2>
+	<h3>Heading Level 3</h3>
+	<h4>Heading Level 4</h4>
+	<h5>Heading Level 5</h5>
+	<h6>Heading Level 6</h6>
+	<hr />
+	<h4>Blockquote</h4>
+	<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+	<h4>Preformatted</h4>
+	<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -778,251 +565,234 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+<section>
+	<h3 class="major">Lists</h3>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+	<h4>Unordered</h4>
+	<ul>
+		<li>Dolor pulvinar etiam.</li>
+		<li>Sagittis adipiscing.</li>
+		<li>Felis enim feugiat.</li>
+	</ul>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+	<h4>Alternate</h4>
+	<ul class="alt">
+		<li>Dolor pulvinar etiam.</li>
+		<li>Sagittis adipiscing.</li>
+		<li>Felis enim feugiat.</li>
+	</ul>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
+	<h4>Ordered</h4>
+	<ol>
+		<li>Dolor pulvinar etiam.</li>
+		<li>Etiam vel felis viverra.</li>
+		<li>Felis enim feugiat.</li>
+		<li>Dolor pulvinar etiam.</li>
+		<li>Etiam vel felis lorem.</li>
+		<li>Felis enim et feugiat.</li>
+	</ol>
+	<h4>Icons</h4>
+	<ul class="icons">
+		<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+		<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+	</ul>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+	<h4>Actions</h4>
+	<ul class="actions">
+		<li><a href="#" class="button special">Default</a></li>
+		<li><a href="#" class="button">Default</a></li>
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special">Default</a></li>
+		<li><a href="#" class="button">Default</a></li>
+	</ul>
+</section>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+<section>
+	<h3 class="major">Table</h3>
+	<h4>Default</h4>
+	<div class="table-wrapper">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Item One</td>
+					<td>Ante turpis integer aliquet porttitor.</td>
+					<td>29.99</td>
+				</tr>
+				<tr>
+					<td>Item Two</td>
+					<td>Vis ac commodo adipiscing arcu aliquet.</td>
+					<td>19.99</td>
+				</tr>
+				<tr>
+					<td>Item Three</td>
+					<td> Morbi faucibus arcu accumsan lorem.</td>
+					<td>29.99</td>
+				</tr>
+				<tr>
+					<td>Item Four</td>
+					<td>Vitae integer tempus condimentum.</td>
+					<td>19.99</td>
+				</tr>
+				<tr>
+					<td>Item Five</td>
+					<td>Ante turpis integer aliquet porttitor.</td>
+					<td>29.99</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2"></td>
+					<td>100.00</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+	<h4>Alternate</h4>
+	<div class="table-wrapper">
+		<table class="alt">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Item One</td>
+					<td>Ante turpis integer aliquet porttitor.</td>
+					<td>29.99</td>
+				</tr>
+				<tr>
+					<td>Item Two</td>
+					<td>Vis ac commodo adipiscing arcu aliquet.</td>
+					<td>19.99</td>
+				</tr>
+				<tr>
+					<td>Item Three</td>
+					<td> Morbi faucibus arcu accumsan lorem.</td>
+					<td>29.99</td>
+				</tr>
+				<tr>
+					<td>Item Four</td>
+					<td>Vitae integer tempus condimentum.</td>
+					<td>19.99</td>
+				</tr>
+				<tr>
+					<td>Item Five</td>
+					<td>Ante turpis integer aliquet porttitor.</td>
+					<td>29.99</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2"></td>
+					<td>100.00</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</section>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button special">Special</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button special icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button special disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+<section>
+	<h3 class="major">Buttons</h3>
+	<ul class="actions">
+		<li><a href="#" class="button special">Special</a></li>
+		<li><a href="#" class="button">Default</a></li>
+	</ul>
+	<ul class="actions">
+		<li><a href="#" class="button">Default</a></li>
+		<li><a href="#" class="button small">Small</a></li>
+	</ul>
+	<ul class="actions">
+		<li><a href="#" class="button special icon fa-download">Icon</a></li>
+		<li><a href="#" class="button icon fa-download">Icon</a></li>
+	</ul>
+	<ul class="actions">
+		<li><span class="button special disabled">Disabled</span></li>
+		<li><span class="button disabled">Disabled</span></li>
+	</ul>
+</section>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="demo-name">Name</label>
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-										</div>
-										<div class="field half">
-											<label for="demo-email">Email</label>
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-										</div>
-										<div class="field">
-											<label for="demo-category">Category</label>
-											<div class="select-wrapper">
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-										</div>
-										<div class="field half first">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-											<label for="demo-priority-low">Low</label>
-										</div>
-										<div class="field half">
-											<input type="radio" id="demo-priority-high" name="demo-priority">
-											<label for="demo-priority-high">High</label>
-										</div>
-										<div class="field half first">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="field half">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
-											<label for="demo-human">Not a robot</label>
-										</div>
-										<div class="field">
-											<label for="demo-message">Message</label>
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-
+<section>
+	<h3 class="major">Form</h3>
+	<form method="post" action="#">
+		<div class="field half first">
+			<label for="demo-name">Name</label>
+			<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+		</div>
+		<div class="field half">
+			<label for="demo-email">Email</label>
+			<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+		</div>
+		<div class="field">
+			<label for="demo-category">Category</label>
+			<div class="select-wrapper">
+				<select name="demo-category" id="demo-category">
+					<option value="">-</option>
+					<option value="1">Manufacturing</option>
+					<option value="1">Shipping</option>
+					<option value="1">Administration</option>
+					<option value="1">Human Resources</option>
+				</select>
 			</div>
+		</div>
+		<div class="field half first">
+			<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+			<label for="demo-priority-low">Low</label>
+		</div>
+		<div class="field half">
+			<input type="radio" id="demo-priority-high" name="demo-priority">
+			<label for="demo-priority-high">High</label>
+		</div>
+		<div class="field half first">
+			<input type="checkbox" id="demo-copy" name="demo-copy">
+			<label for="demo-copy">Email me a copy</label>
+		</div>
+		<div class="field half">
+			<input type="checkbox" id="demo-human" name="demo-human" checked>
+			<label for="demo-human">Not a robot</label>
+		</div>
+		<div class="field">
+			<label for="demo-message">Message</label>
+			<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+		</div>
+		<ul class="actions">
+			<li><input type="submit" value="Send Message" class="special" /></li>
+			<li><input type="reset" value="Reset" /></li>
+		</ul>
+	</form>
+</section>
 
-		<!-- BG -->
-			<div id="bg"></div>
+</article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+</div>
 
-	</body>
+<!-- Footer -->
+
+</div>
+
+<!-- BG -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
