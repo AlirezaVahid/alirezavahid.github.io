@@ -222,7 +222,7 @@
 
 [J2] A. Vahid, M. A. Maddah-Ali, S. Avestimehr &ldquo;<a href="http://arxiv.org/abs/1301.5309">Capacity Results for Binary Fading Interference Channels With Delayed CSIT</a>,&rdquo;  IEEE Transactions on Information Theory, vol. 60, no. 10, pp. 6093-6130, 2014. <br /> <br />
 
-[J1] A. Vahid, C. Suh, S. Avestimehr &ldquo;<a href="http://arxiv.org/abs/1103.5426">Interference Channels with Rate-Limited Feedback</a>,&rdquo;  IEEE Transactions on Information Theory, vol. 58, no. 5, pp. 2788-2812, 2012. <br /> <br />
+[J1] A. Vahid, C. Suh, S. Avestimehr &ldquo;<a href="http://arxiv.org/abs/1103.5426">Interference Channels with Rate-Limited Feedback</a>,&rdquo;  IEEE Transactions on Information Theory, vol. 58, no. 5, pp. 2788-2782, 2012. <br /> <br />
 </p>
 
 <h3>Conference Publications</h3>
@@ -331,7 +331,7 @@ A. Vahid, &ldquo;<a href="Thesis-AlirezaVahid.pdf">The Impact of Imperfect Feedb
 <li>Qualcomm Innovation Award Winner (Innovation Title: Collaborative Interference Management), 2013.</li>
 <li>Director's PhD Teaching Assistant Award, Cornell University, 2011.</li>
 <li>Jacobs Scholar Fellowship, School of ECE, Cornell University, 2009.</li>
-<li><a href="https://www.isna.ir/news/8306-08021/%D9%86%D9%81%D8%B1%D8%A7%D8%AA-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%8BD-%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%D9%8A-%D8%B3%D8%A7%D9%84-83-%D9%85%D8%B9%D8%B1%D9%81%D9%8A-%D8%B4%D8%AF%D9%86%D8%AF">Ranked 2nd</a> among over 360,000 participants in Iranian National University Entrance Exam, 2004.</li>
+<li><a href="https://www.isna.ir/news/8306-08021/%D9%86%D9%81%D8%B1%D8%A7%D8%AA-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%8BD-%D8%B3%D8%B1%D8%A7%D8%B3%D8%B1%D9%8A-%D8%B3%D8%A7%D9%84-83-%D9%85%D8%B9%D8%B1%D9%81%D9%8A-%D8%B4%D8%AF%D9%8BD">Ranked 2nd</a> among over 360,000 participants in Iranian National University Entrance Exam, 2004.</li>
 <li>Silver medal, Iranian National Physics Olympiad, 2003.</li>
 </ul>
 </article>
@@ -422,6 +422,9 @@ A. Vahid, &ldquo;<a href="Thesis-AlirezaVahid.pdf">The Impact of Imperfect Feedb
 <li>April 2019 <span style="color: #00f2ff">[Conference Publication]</span>: Our paper &ldquo;No Feedback, No Problem: Capacity of Erasure Broadcast Channels with Single-User Delayed CSI,&rdquo; has been accepted for presentation at ISIT 2019.</li> 
 <li>March 2019 <span style="color: #ff33ff">[Award/Grant]</span>: I received the 2019 New Faculty Research Award from the University of Colorado.</li>
 <li>March 2019 <span style="color: #00f2ff">[Journal Publication]</span>: Our paper &ldquo;On the Degrees-of-Freedom of Two-Unicast Wireless Networks with Delayed CSIT,&rdquo; has been accepted for publication in IEEE Transactions on Information Theory.</li> 
+</ul>
+<ul class="actions" id="news-show-more-container" style="margin-top: 1.5rem;">
+	<li><button id="news-show-more-btn" class="button">Show More</button></li>
 </ul>
 </article>
 
@@ -793,6 +796,39 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+	/* Dynamic pagination logic for Recent News */
+	document.addEventListener("DOMContentLoaded", function() {
+		var newsItems = document.querySelectorAll("#news ul:not(.actions) > li");
+		var batchSize = 20;
+		var currentlyShown = batchSize;
+
+		// Hide items beyond the initial 20
+		for (var i = batchSize; i < newsItems.length; i++) {
+			newsItems[i].style.display = "none";
+		}
+
+		var btn = document.getElementById("news-show-more-btn");
+		var container = document.getElementById("news-show-more-container");
+
+		if (newsItems.length <= batchSize) {
+			if (container) container.style.display = "none";
+		} else if (btn) {
+			btn.addEventListener("click", function() {
+				var revealed = 0;
+				for (var i = currentlyShown; i < newsItems.length && revealed < batchSize; i++) {
+					newsItems[i].style.display = "";
+					revealed++;
+				}
+				currentlyShown += revealed;
+				if (currentlyShown >= newsItems.length) {
+					container.style.display = "none";
+				}
+			});
+		}
+	});
+</script>
 
 </body>
 </html>
