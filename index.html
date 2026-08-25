@@ -14,6 +14,16 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
 		<style>
+			/* Fix for clipped header content and links across all screen sizes */
+			#header .content {
+				max-height: none !important;
+			}
+
+			#header .content .inner {
+				max-height: none !important;
+				overflow: visible !important;
+			}
+
 			/* Mobile scroll and overflow fix for long header content */
 			@media screen and (max-width: 736px) {
 				html, body {
@@ -32,13 +42,7 @@
 					margin-top: 1rem !important;
 				}
 
-				#header .content {
-					max-height: none !important;
-				}
-
 				#header .content .inner {
-					max-height: none !important;
-					overflow: visible !important;
 					padding: 2rem 1.25rem 1rem 1.25rem !important;
 				}
 
@@ -107,7 +111,6 @@
 <h2 class="major">About</h2>
 <img src="images/Website-Intro.jpg" alt="alt text" width="250px" />
 
-<p>I received my B.Sc. in Electrical Engineering from Sharif University of Technology, and my M.Sc. and Ph.D. from the School of Electrical and Computer Engineering at Cornell University working with <a href="http://www-bcf.usc.edu/~avestime/Home.html">Professor Salman Avestimehr</a>. I received the 2015 Best PhD Thesis Award and the 2011 Best PhD Teaching Award from Cornell. After receiving my PhD, I worked as a postdoctoral research fellow at Duke University with <a href="http://ece.duke.edu/faculty/robert-calderbank">Professor Robert Calderbank</a>. I joined the University of Colorado in August 2017. My research interests include network information theory, wireless communications, coding theory, and data storage.</p>
 
 </article>
 
@@ -736,10 +739,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<ul class="actions">
 		<li><a href="#" class="button">Default</a></li>
 		<li><a href="#" class="button small">Small</a></li>
-	</ul>
-	<ul class="actions">
-		<li><a href="#" class="button special icon fa-download">Icon</a></li>
-		<li><a href="#" class="button icon fa-download">Icon</a></li>
 	</ul>
 	<ul class="actions">
 		<li><span class="button special disabled">Disabled</span></li>
