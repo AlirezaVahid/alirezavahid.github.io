@@ -19,6 +19,29 @@
 				overflow: visible !important;
 			}
 
+			/* Navigation hover sizing and alignment fix for multiple tabs */
+			#header nav ul {
+				display: flex !important;
+				width: 100% !important;
+			}
+
+			#header nav ul li {
+				flex: 1 1 0px !important;
+				min-width: 0 !important;
+			}
+
+			#header nav ul li a {
+				display: flex !important;
+				align-items: center !important;
+				justify-content: center !important;
+				width: 100% !important;
+				height: 100% !important;
+				min-width: 0 !important;
+				padding: 0 0.5rem !important;
+				box-sizing: border-box !important;
+				text-align: center !important;
+			}
+
 			/* Mobile scroll and overflow fix for long header content */
 			@media screen and (max-width: 736px) {
 				html, body {
